@@ -11,5 +11,17 @@ const returnLastTwoDrivers = function(names) {
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
+function createFareMultiplier(num) {
+    // was not working b/c of the missing return when using {}
+    return (fare) => fare * num; 
+    // OR
+    // return function (fare) {
+    //     return fare * num;
+    // }
+}
+const fareDoubler = createFareMultiplier(2);
+const fareTripler = createFareMultiplier(3);
 
-// let names = ['Antonia', 'Nuru', 'Amari', 'Mo'];
+function selectDifferentDrivers(names, callback) {
+    return callback(names);
+}
