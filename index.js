@@ -9,3 +9,7 @@ const returnLastTwoDrivers = function(names) {
     return names.length >= 2 ? names.slice(-2) : undefined;
 }
 
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
+
+
+// let names = ['Antonia', 'Nuru', 'Amari', 'Mo'];
